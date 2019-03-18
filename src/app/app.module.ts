@@ -16,6 +16,7 @@ import { DetailsComponent } from './details/details.component';
 import { SummaryComponent } from './summary/summary.component';
 import { HomeComponent } from './home/home.component';
 import { LinechartComponent } from './shared/linechart/linechart.component';
+import { CffGraphsComponent } from './cff-graphs/cff-graphs.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { LinechartComponent } from './shared/linechart/linechart.component';
     DetailsComponent,
     SummaryComponent,
     HomeComponent,
+    CffGraphsComponent,
   ],
   imports: [
     BrowserModule,

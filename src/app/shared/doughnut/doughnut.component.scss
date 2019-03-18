@@ -1,0 +1,191 @@
+.parentDiv {
+  margin: 0 auto;
+}
+
+.parentDiv {
+  @media (min-width: 992px) and (max-width: 1100px) {
+    margin: 0 -5%;
+  }
+  @media (min-width: 1141px) and (max-width: 1212px) {
+    margin: 0 -10%;
+  }
+  @media (min-width: 1213px) and (max-width: 1290px) {
+    margin: 0 -8%;
+  }
+  @media print {
+    margin: 0 auto;
+  }
+}
+
+.parentDiv.qpf {
+  margin: -5% 19%;
+  @media (max-width: 500px) {
+  }
+  @media (min-width: 501px) and (max-width: 530px) {
+    margin: -5% 22%;
+  }
+  @media (min-width: 531px) and (max-width: 560px) {
+    margin: -5% 24%;
+  }
+  @media (min-width: 561px) and (max-width: 600px) {
+    margin: -5% 27%;
+  }
+  @media (min-width: 601px) and (max-width: 630px) {
+    margin: -5% 27%;
+  }
+  @media (min-width: 631px) and (max-width: 660px) {
+    margin: -5% 30%;
+  }
+  @media (min-width: 661px) and (max-width: 700px) {
+    margin: -5% 30%;
+  }
+  @media (min-width: 701px) and (max-width: 767px) {
+    margin: -5% 30%;
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    margin: -5% 15%;
+  }
+  @media (min-width: 992px) {
+    margin: 0 auto;
+  }
+  @media print {
+    margin: 0 auto;
+  }
+}
+
+.parentDiv.insideQpf {
+  margin: 0 auto;
+  @media (min-width: 992px) and (max-width: 1040px) {
+    margin: 0 -2%;
+  }
+  @media (min-width: 1041px) and (max-width: 1120px) {
+    margin: 0 -2%;
+  }
+  @media (min-width: 1121px) and (max-width: 1150px) {
+    margin: 0 -3%;
+  }
+  @media (min-width: 1151px) and (max-width: 1200px) {
+    margin: 0 -7%;
+  }
+  @media (min-width: 1201px) and (max-width: 1249px) {
+    margin: 0 -4%;
+  }
+  @media (min-width: 1250px) and (max-width: 1298px) {
+    margin: 0 -1%;
+  }
+  @media (min-width: 1299px) and (max-width: 1299px) {
+    margin: 0 6%;
+  }
+  @media (min-width: 1300px) and (max-width: 1336px) {
+    margin: 0 -11%;
+  }
+  @media (min-width: 1337px) and (max-width: 1367px) {
+    margin: 0 -7%;
+  }
+  @media (min-width: 1368px) and (max-width: 1398px) {
+    margin: 0 -10%;
+  }
+  @media print {
+    margin: 0 auto;
+  }
+}
+
+.arc text {
+  font: 15px sans-serif;
+  text-anchor: middle;
+}
+
+.arc path {
+  stroke-width: 1px;
+}
+
+.tooltip {
+  line-height: 1.3;
+  padding: 8px 16px 6px 16px;
+  white-space: pre;
+  background: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 2px;
+  z-index: 1;
+  font-family: 'Open Sans', Semi-Bold;
+  font-size: 12px;
+}
+
+.tooltip2 {
+  line-height: 1.3;
+  padding: 8px 16px 6px 16px;
+  white-space: pre;
+  background: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 2px;
+  z-index: 1;
+  font-family: 'Open Sans', Semi-Bold;
+  font-size: 12px;
+}
+
+
+.QTDB {
+
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Open Sans', Bold;
+  fill: #373A3C;
+}
+
+.QTDS {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Open Sans', Bold;
+  fill: #373A3C;
+}
+
+.QTDBN {
+  font-size: 24px;
+  font-family: 'Open Sans', Semi-Bold;
+  white-space: pre;
+  font-weight: 600;
+  fill: #373A3C;
+}
+
+.QTDSN {
+  font-size: 24px;
+  font-weight: 600;
+  white-space: pre;
+  font-family: 'Open Sans', Semi-Bold;
+  fill: #373A3C;
+}
+
+.QTDBR {
+  fill: #989898 !important;
+}
+
+.YTDB {
+
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Open Sans', Semi-Bold;
+  fill: #989898;
+}
+
+.YTDS {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Open Sans', Semi-Bold;
+  fill: #989898;
+}
+
+.YTDBN {
+  font-size: 24px;
+  font-family: 'Open Sans', Semi-Bold;
+  font-weight: 600;
+  white-space: pre;
+  fill: #989898;
+}
+
+.YTDSN {
+  font-size: 24px;
+  font-weight: 600;
+  white-space: pre;
+  font-family: 'Open Sans', Semi-Bold;
+  fill: #989898;
+}

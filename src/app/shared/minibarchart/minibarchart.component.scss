@@ -1,0 +1,42 @@
+::ng-deep g:nth-child(2) > text {
+  fill: #989898 !important;
+}
+
+::ng-deep g:nth-child(1) > text {
+  fill: black !important;
+}
+
+.custom-tooltip-header-grey {
+  font-weight: 400;
+  font-size: 12px;
+  width: 200px;
+  margin: 0;
+  padding: 5px;
+  color: #989898 !important;
+}
+
+.custom-tooltip-header-black {
+  font-size: 12px;
+  font-weight: 400;
+  width: 200px;
+  margin: 0;
+  padding: 5px;
+  color: #373a3c !important;
+}
+
+.custom-tooltip-body-black {
+  width: 50px;
+  margin: 0;
+  padding: 0 0 5px 0;
+  font-size: 18px;
+  color: #373a3c !important;
+}
+
+.custom-tooltip-body-grey {
+  width: 50px;
+  margin: 0;
+  padding: 0 0 5px 0;
+  font-size: 18px;
+  color: #989898 !important;
+
+}

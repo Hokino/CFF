@@ -1,0 +1,28 @@
+<div class="bar" id="mini-bar-chart">
+  <ngx-charts-bar-vertical
+    [view]="view"
+    [scheme]="colorScheme"
+    [results]="graphdata"
+    [gradient]="gradient"
+    [xAxis]="showXAxis"
+    [yAxis]="showYAxis"
+    [legend]="showLegend"
+    [showXAxisLabel]='false'
+    [showYAxisLabel]="false"
+    [xAxisLabel]="false"
+    [yAxisLabel]="false"
+    [roundEdges]="roundEdges"
+    [tooltipDisabled]="tooltipDisabled"
+    [barPadding]="padding"
+    [yScaleMax]="yScaleMax"
+    (select)="onSelect($event)">
+    <ng-template #tooltipTemplate let-model="model">
+      <p *ngIf="model.name==='QTD'" class="custom-tooltip-header-black">
+        No of Responses ({{model.name}}): {{No_of_response[0].responses}}
+      </p>
+      <p *ngIf="model.name==='YTD'" class="custom-tooltip-header-grey">
+        No of Responses ({{model.name}}): {{No_of_response[1].responses}}
+      </p>
+    </ng-template>
+  </ngx-charts-bar-vertical>
+</div>

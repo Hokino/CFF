@@ -1,0 +1,80 @@
+export const MiniChartData = [
+  {
+    'type': 'CLEAN',
+    'qtd': '8.59',
+    'ytd': '8.59',
+    'wowScore': -0.15,
+    'yoyScore': -0.15,
+    'qtdGoalAttainment': '38.0',
+    'ytdGoalAttainment': '38.0',
+    'qtdVariance': '-16.1',
+    'ytdVariance': '-16.1',
+    'qtdTotalResponses': '549,740',
+    'ytdTotalResponses': '549,740'
+  },
+  {
+    'type': 'FAST',
+    'qtd': '8.60',
+    'ytd': '8.60',
+    'wowScore': -0.13,
+    'yoyScore': -0.13,
+    'qtdGoalAttainment': '37.0',
+    'ytdGoalAttainment': '37.0',
+    'qtdVariance': '-16.8',
+    'ytdVariance': '-16.8',
+    'qtdTotalResponses': '549,740',
+    'ytdTotalResponses': '549,740'
+  },
+  {
+    'type': 'FRIENDLY',
+    'qtd': '8.67',
+    'ytd': '8.67',
+    'wowScore': -0.07,
+    'yoyScore': -0.07,
+    'qtdGoalAttainment': '44.0',
+    'ytdGoalAttainment': '44.0',
+    'qtdVariance': '-8.8',
+    'ytdVariance': '-8.8',
+    'qtdTotalResponses': '460,064',
+    'ytdTotalResponses': '460,064'
+  },
+  {
+    'type': 'AVAILABILITY',
+    'qtd': '8.31',
+    'ytd': '8.31',
+    'wowScore': -0.21,
+    'yoyScore': -0.21,
+    'qtdGoalAttainment': '0.0',
+    'ytdGoalAttainment': '0.0',
+    'qtdVariance': '0.0',
+    'ytdVariance': '0.0',
+    'qtdTotalResponses': '548,573',
+    'ytdTotalResponses': '548,573'
+  },
+  {
+    'type': 'PRICE',
+    'qtd': '8.70',
+    'ytd': '8.70',
+    'wowScore': 0.01,
+    'yoyScore': 0.01,
+    'qtdGoalAttainment': '0.0',
+    'ytdGoalAttainment': '0.0',
+    'qtdVariance': '0.0',
+    'ytdVariance': '0.0',
+    'qtdTotalResponses': '548,573',
+    'ytdTotalResponses': '548,573'
+  },
+  {
+    'type': 'PRODUCT QUALITY',
+    'qtd': '8.91',
+    'ytd': '8.91',
+    'wowScore': -0.06,
+    'yoyScore': -0.06,
+    'qtdGoalAttainment': '0.0',
+    'ytdGoalAttainment': '0.0',
+    'qtdVariance': '0.0',
+    'ytdVariance': '0.0',
+    'qtdTotalResponses': '548,573',
+    'ytdTotalResponses': '548,573'
+  }
+];
