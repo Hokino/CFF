@@ -1,0 +1,105 @@
+<div class="row">
+  <div *ngFor="let pie of pieCharts" class="col-sm-4 col-md-2 col-xs-12 pie-wrapper component-wrapper ">
+    <div class="pie">
+      <div class="pie-panel">
+        <header class="pie-header">
+          <h3 class="title">GBU CFF</h3>
+        </header>
+        <div class="top-data">
+          <div class="pull-left data-left">
+              <p class="para-top">{{ numberStores }}/{{ designatedTotal }}</p>
+              <p class="para-top">QTD QUALIFIER</p>
+          </div>
+          <div class="pull-right data-right">
+            <p class="para-top">{{ numberStores }}/{{ designatedTotal }}</p>
+            <p class="para-top">YTD QUALIFIER</p>
+          </div>
+        </div>
+
+        <div class="pie-chart">
+          <div class="chart-inner">
+            <app-pie-chart
+              [pieChart] = "pie">
+            </app-pie-chart>
+          </div>
+        </div>
+
+        <div class="bottom-data">
+          <div class="pull-left data-left">
+            <p class="para-bot"><img src="../../assets/arrow-up.svg" class="arrow">  14.2%</p>
+            <p class="para-bot">YTD</p>
+          </div>
+          <div class="pull-right data-right">
+              <p class="para-bot"><img src="../../assets/arrow-up.svg" class="arrow">  14.2%</p>
+            <p class="para-bot">YTD</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-8 col-md-10 col-xs-12 component-wrapper">
+    <div *ngFor="let bar of barCharts; let i = index" class="col-sm-6 col-md-3 col-lg-2 col-xs-6 bar-wrapper">
+      <div class="bar-panel">
+        <header class="header">
+          <h3 class="title">{{graphNames[i]}}</h3>
+        </header>
+
+        <div class="chart-stats">
+          <span class="left-element">
+            <img src="../../assets/arrow-up.svg" class="arrow">  0.21
+          </span>
+          <span class="right-element">
+            <img src="../../assets/arrow-up.svg" class="arrow">  0.22
+          </span>
+        </div>
+
+        <div class="chart-values">
+          <span class="left-element tooltip">8.39</span>
+          <span class="right-element">8.59</span>
+        </div>
+
+        <div class="bar-chart">
+          <div class="chart-inner">
+            <app-bar-chart [bar]="bar"></app-bar-chart>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-break">
+  <div class="row line-row">
+    <div class="line-panel">
+      <div class="line-wrapper">
+        <header class="line-header">
+          <h3 class="title">GBU CFF TRENDS <span class="pull-right title-right">(Rolling 4 weeks)</span></h3>
+        </header>
+        <div class="chart-inner">
+          <app-linechart [graphdata]="lineData" id="svgline"></app-linechart>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- <div *ngFor="let pie of pieCharts" class="col-md-2 col-sm-4 col-xs-12 pie-wrapper component-wrapper ">
+    <app-details-pie-chart
+      [pieChart] = "pie">
+    </app-details-pie-chart>
+  </div> -->
+
+  <!--
+    <div *ngFor="let bar of barCharts" class="col-sm-6 col-md-3 col-lg-2 col-xs-6 bar-wrapper">
+      <app-details-bar-chart
+        [bar]="bar"
+        >
+      </app-details-bar-chart>
+    </div>
+  </div> -->

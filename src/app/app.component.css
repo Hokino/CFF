@@ -1,0 +1,19 @@
+.container-main {
+  margin: 0;
+  background-color: #F4F7F9;
+  height: 100%;
+  width: 100%;
+
+  /* Set the height to match that of the viewport. */
+  height: 100vh;
+
+  /* Set the width to match that of the viewport. */
+  width: 100vw;
+}
+.page-break {
+  page-break-after: always;
+  height: 0;
+  display: block;
+  clear: both;
+}
+

@@ -1,0 +1,38 @@
+.d3-chart {
+  width: 100%;
+  height: 210px;
+  position: relative;
+}
+
+.d3-chart .axis path,
+.d3-chart .axis line {
+  stroke: #999;
+}
+
+.d3-chart .axis text {
+  fill: #999;
+}
+
+.tooltip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 8px 16px 6px 16px;
+
+  background: white;
+  color: black;
+  box-shadow: 0 3px 6px grey;
+  border-radius: 2px;
+  z-index: 1;
+  font-family: 'Open Sans', Semi-Bold;
+}
+
+.axis domain {
+  stroke: red;
+}
+
+.axis .axis path,
+.axis .axis line {
+  stroke: #999;
+}
+
+
