@@ -1,4 +1,4 @@
-import { LineData } from './../line-chart-data';
+import { LineChartData } from './../line-chart-data';
 import { Component, OnInit } from '@angular/core';
 import { single, multi, pieSingle} from './../data';
 
@@ -41,7 +41,7 @@ export class DetailsComponent implements OnInit {
     }
   };
 
-  lineData = LineData;
+  lineChartData = LineChartData;
   pieCharts = [{...this.pieChart}];
   barCharts = [{...this.barChart}, {...this.barChart}, {...this.barChart}, {...this.barChart}, {...this.barChart}, {...this.barChart}];
 

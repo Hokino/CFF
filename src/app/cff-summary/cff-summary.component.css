@@ -20,10 +20,9 @@
   font-weight: bold;
   flex-flow: row wrap;
   text-align: center;
-  border-style: solid;
-  border: 1px;
+  border: solid grey;
+  border-width: 1px 1px;
   border-radius: 5px;
-  border-color: pink;
   padding-left: 0;
   justify-content: center;
   background-color: white;
@@ -31,24 +30,31 @@
 }
 .pie-header{
   margin-top: -10px;
-  border-bottom-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: grey;
   width: 100%;
 }
+.green{
+  border-bottom-color: green;
+}
+.red{
+  border-bottom-color: red;
+}
+.blue{
+  border-bottom-color: blue;
+}
 .title {
+  text-align: left;
+  padding-left: 10px;
   font-size: 16px;
   font-weight: bold;
 }
 .top-data {
+  padding-top: 10px;
   margin-bottom: -5%;
   width: 100%
 }
-
-
-/* @media screen and (max-width: 600px) {
-  div.example {
-    font-size: 30px;
-  }
-}  */
 
 .para-top {
   margin: 0px;
@@ -68,6 +74,9 @@
   .para-top {
     font-size: 9px;
   }
+  .pie-chart{
+    margin-left: -10px;
+  }
 }
 @media screen and (max-width: 1050px) {
   .para-top {
@@ -79,7 +88,6 @@
     font-size: 11px;
   }
 }
-
 
 .data-left {
   padding-left: 5%;
@@ -102,48 +110,6 @@
   font-weight: 500;
 }
 
-.bar-wrapper {
-  padding-left: 0px;
-  padding-bottom: 2px;
-  padding-right: 10px;
-}
-.bar-panel {
-  height: 312px;
-  display: flex;
-  flex-flow: row wrap;
-  font-weight: bold;
-  text-align: center;
-  border-style: solid;
-  border: 1px;
-  border-radius: 5px;
-  border-color: black;
-  padding-left: 0;
-  justify-content: center;
-  background-color: white;
-}
-.bar-header {
-  width: 100%;
-}
-.chart-stats {
-  width: 100%;
-  font-size: 16px;
-  flex-direction: row;
-}
-.chart-values {
-  width: 100%;
-  font-size: 20px;
-  font-weight: 500;
-  flex-direction: row;
-}
-.left-element{
-  padding-right: 20%;
-  width: 50%;
-}
-.right-element{
-  padding: 0px;
-  width: 50%;
-}
-
 .arrow {
   height: 16px;
 }
@@ -154,32 +120,6 @@
   display: inline-block;
 }
 
-.line-row {
-  padding-top: 30px;
-}
-.line-panel {
-  width: 100%;
-  display: flex;
-  font-weight: bold;
-  flex-flow: row wrap;
-  text-align: center;
-  border-style: solid;
-  border: 1px;
-  border-radius: 5px;
-  border-color: pink;
-  justify-content: center;
-  background-color: white;
-}
-.line-wrapper {
-  margin:25px;
-  width: 100%;
-  background-color: #F4F7F9;
-}
-.line-header {
-  width:100%;
-  padding-bottom: 10px;
-}
-.title-right {
-  padding-right: 20px;
-  font-weight: 500;
+.glyph-right {
+  padding-right: 5px;
 }

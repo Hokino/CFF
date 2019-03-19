@@ -1,0 +1,12 @@
+.row {
+  display: flex;
+  font-family: Arial, Verdana, Tahoma;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin:0
+}
+
+.center {
+  text-align: center;
+}

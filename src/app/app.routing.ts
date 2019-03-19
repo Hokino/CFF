@@ -1,4 +1,5 @@
-import { CffGraphsComponent } from './cff-graphs/cff-graphs.component';
+import { CffSummaryComponent } from './cff-summary/cff-summary.component';
+import { CffDetailsComponent } from './cff-details/cff-details.component';
 import { SummaryComponent } from './summary/summary.component';
 import { HomeComponent } from './home/home.component';
 
@@ -10,7 +11,8 @@ const appRouter: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full'},
   { path: 'details', component: DetailsComponent},
   { path: 'summary', component: SummaryComponent},
-  { path: 'cff-graphs', component: CffGraphsComponent},
+  { path: 'cff-details', component: CffDetailsComponent},
+  { path: 'cff-summary', component: CffSummaryComponent},
   { path: '**', redirectTo: ''}
 ];
 

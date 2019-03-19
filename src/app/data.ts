@@ -11,8 +11,8 @@ export const single = [
 
   export const pieSingle = [
     {
-      'name': 'Germany',
-      'value': 2226
+      'name': 'QTD',
+      'value': '2225'
     },
   ];
 

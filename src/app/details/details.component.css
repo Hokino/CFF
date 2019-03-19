@@ -20,10 +20,9 @@
   font-weight: bold;
   flex-flow: row wrap;
   text-align: center;
-  border-style: solid;
-  border: 1px;
+  border: solid grey;
+  border-width: 1px 1px;
   border-radius: 5px;
-  border-color: pink;
   padding-left: 0;
   justify-content: center;
   background-color: white;
@@ -31,7 +30,9 @@
 }
 .pie-header{
   margin-top: -10px;
-  border-bottom-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: grey;
   width: 100%;
 }
 .title {
@@ -39,6 +40,7 @@
   font-weight: bold;
 }
 .top-data {
+  padding-top: 10px;
   margin-bottom: -5%;
   width: 100%
 }
@@ -113,10 +115,9 @@
   flex-flow: row wrap;
   font-weight: bold;
   text-align: center;
-  border-style: solid;
-  border: 1px;
+  border: solid grey;
+  border-width: 1px 1px;
   border-radius: 5px;
-  border-color: black;
   padding-left: 0;
   justify-content: center;
   background-color: white;

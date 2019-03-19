@@ -5,7 +5,7 @@ import * as d3Shape from 'd3-shape';
 
 
 @Component({
-  selector: 'app-bar-chart',
+  selector: 'app-doughnut-chart',
   templateUrl: './doughnut.component.html',
   styleUrls: ['./doughnut.component.scss'],
   encapsulation: ViewEncapsulation.None

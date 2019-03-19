@@ -1,0 +1,98 @@
+<div class="row">
+    <div *ngFor="let pie of pieCharts" class="col-sm-4 col-md-2 col-xs-12 pie-wrapper component-wrapper ">
+      <div class="pie">
+        <div class="pie-panel">
+          <header class="pie-header">
+            <h3 class="title">{{pie.type}}</h3>
+          </header>
+          <div class="top-data">
+            <div class="pull-left data-left">
+                <p class="para-top">{{ pie.qtdRank }}/{{ pie.qtdNumberOfStores }}</p>
+                <p class="para-top">QTD QUALIFIER</p>
+            </div>
+            <div class="pull-right data-right">
+              <p class="para-top">{{ pie.ytdRank }}/{{ pie.ytdNumberOfStores }}</p>
+              <p class="para-top">YTD QUALIFIER</p>
+            </div>
+          </div>
+
+          <div class="pie-chart">
+            <div class="chart-inner">
+              <app-doughnut-chart
+                [id]=pie.idValue [donuttype]=pie.donuttype [timeframe]="pie.gbutype"
+                [type]=pie.type [graphdata]=pie.allTypeqtd
+                [graphdata1]=pie.allTypeytd>
+                >
+              </app-doughnut-chart>
+            </div>
+          </div>
+
+          <div class="bottom-data">
+            <div class="pull-left data-left">
+              <p class="para-bot"><img src="../../assets/arrow-up.svg" class="arrow"> {{pie.wowScore}}%</p>
+              <p class="para-bot">QTD</p>
+            </div>
+            <div class="pull-right data-right">
+                <p class="para-bot"><img src="../../assets/arrow-up.svg" class="arrow">  {{pie.yoyScore}}%</p>
+              <p class="para-bot">YTD</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-8 col-md-10 col-xs-12 component-wrapper">
+      <div *ngFor="let bar of barCharts; let i = index" class="col-sm-6 col-md-3 col-lg-2 col-xs-6 bar-wrapper">
+        <div class="bar-panel">
+          <header class="header">
+            <h3 class="title">{{bar.type}}</h3>
+          </header>
+
+          <div class="chart-stats">
+            <span class="left-element" [ngClass]="qtdSelected ? 'noth' : 'greyed'">
+              <img *ngIf="bar.showArrowUpQtd" src="../../assets/arrow-up.svg" class="arrow">
+              <img *ngIf="!bar.showArrowUpQtd" src="../../assets/Arrow-down.svg" class="arrow">
+              {{bar.wowScore}}
+            </span>
+            <span class="right-element" [ngClass]="qtdSelected ? 'greyed' : 'noth'">
+              <img *ngIf="bar.showArrowUpYtd" src="../../assets/arrow-up.svg" class="arrow">
+              <img *ngIf="!bar.showArrowUpYtd" src="../../assets/Arrow-down.svg" class="arrow">
+              {{bar.yoyScore}}
+            </span>
+          </div>
+
+          <div class="chart-values">
+            <span class="left-element" [ngClass]="qtdSelected ? 'noth' : 'greyed'">{{bar.qtd}}</span>
+            <span class="right-element" [ngClass]="qtdSelected ? 'greyed' : 'nothing'">{{bar.ytd}}</span>
+          </div>
+
+          <div class="bar-chart">
+            <div class="chart-inner">
+              <!-- <app-bar-chart [bar]="bar"></app-bar-chart> -->
+              <app-minibarchart
+              (qtdSelectedEvent)="onQtdSelectedChange($event)"
+              [graphdata]="bar.allTypeBarvalue">
+            </app-minibarchart>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-break">
+    <div class="row line-row">
+      <div class="line-panel">
+        <div class="line-wrapper">
+          <header class="line-header">
+            <h3 class="title">GBU CFF TRENDS <span class="pull-right title-right">(Rolling 4 weeks)</span></h3>
+          </header>
+          <div class="chart-inner">
+            <app-linechart [graphdata]="lineChartData" id="svgline"></app-linechart>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

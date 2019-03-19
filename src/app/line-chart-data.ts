@@ -1,4 +1,4 @@
-export const LineData = [
+export const LineChartData = [
   {
     'name': 'TY',
     'series': [

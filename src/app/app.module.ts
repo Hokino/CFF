@@ -1,3 +1,6 @@
+import { ChartsService } from './charts.service';
+import { DoughnutComponent } from './shared/doughnut/doughnut.component';
+import { MinibarchartComponent } from './shared/minibarchart/minibarchart.component';
 import { PieChartComponent } from './shared/pie-chart/pie-chart.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -16,12 +19,15 @@ import { DetailsComponent } from './details/details.component';
 import { SummaryComponent } from './summary/summary.component';
 import { HomeComponent } from './home/home.component';
 import { LinechartComponent } from './shared/linechart/linechart.component';
-import { CffGraphsComponent } from './cff-graphs/cff-graphs.component';
+import { CffDetailsComponent } from './cff-details/cff-details.component';
+import { CffSummaryComponent } from './cff-summary/cff-summary.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    DoughnutComponent,
+    MinibarchartComponent,
     PieChartComponent,
     DropdownDirective,
     HeaderComponent,
@@ -30,7 +36,8 @@ import { CffGraphsComponent } from './cff-graphs/cff-graphs.component';
     DetailsComponent,
     SummaryComponent,
     HomeComponent,
-    CffGraphsComponent,
+    CffDetailsComponent,
+    CffSummaryComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,7 +47,7 @@ import { CffGraphsComponent } from './cff-graphs/cff-graphs.component';
     AppRoutingModule,
     NgxChartsModule,
   ],
-  providers: [],
+  providers: [ChartsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

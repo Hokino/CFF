@@ -1,0 +1,45 @@
+<div class="row">
+  <div *ngFor="let pie of pieCharts; let i = index" class="col-sm-4 col-md-2 col-xs-12 pie-wrapper component-wrapper ">
+    <div class="pie-panel">
+      <header [ngClass]="pieChartColors[i]" class="pie-header">
+        <h3 class="title">{{pie.type}}
+            <div class="pull-right"><a [routerLink]="['/details']" class="glyphicon glyphicon-menu-right glyph-right"></a></div>
+        </h3>
+      </header>
+      <div class="top-data">
+        <div class="pull-left data-left">
+            <p class="para-top">{{ pie.qtdRank }}/{{ pie.qtdNumberOfStores }}</p>
+            <p class="para-top">QTD QUALIFIER</p>
+        </div>
+        <div class="pull-right data-right">
+          <p class="para-top">{{ pie.ytdRank }}/{{ pie.ytdNumberOfStores }}</p>
+          <p class="para-top">YTD QUALIFIER</p>
+        </div>
+      </div>
+
+      <div class="pie-chart">
+        <div class="chart-inner">
+          <app-doughnut-chart
+            [id]=pie.idValue [donuttype]=pie.donuttype [timeframe]="pie.gbutype"
+            [type]=pie.type [graphdata]=pie.allTypeqtd
+            [graphdata1]=pie.allTypeytd>
+            >
+          </app-doughnut-chart>
+        </div>
+      </div>
+
+      <div class="bottom-data">
+        <div class="pull-left data-left">
+          <p class="para-bot"><img src="../../assets/arrow-up.svg" class="arrow">  {{pie.wowScore}}%</p>
+          <p class="para-bot">QTD</p>
+        </div>
+        <div class="pull-right data-right">
+            <p class="para-bot"><img src="../../assets/arrow-up.svg" class="arrow">  {{pie.yoyScore}}%</p>
+          <p class="para-bot">YTD</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+

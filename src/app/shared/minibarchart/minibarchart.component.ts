@@ -1,6 +1,4 @@
-import {Component, NgModule, Input} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
-import {NgxChartsModule} from '@swimlane/ngx-charts';
+import { Component, NgModule, Input, AfterViewInit, OnInit, EventEmitter, Output } from '@angular/core';
 import {multi} from './minibarchartdata_model';
 
 export interface Margin {
@@ -15,15 +13,15 @@ export interface Margin {
   templateUrl: './minibarchart.component.html',
   styleUrls: ['./minibarchart.component.scss']
 })
-export class MinibarchartComponent {
+export class MinibarchartComponent implements OnInit, AfterViewInit {
 
   @Input() graphdata: Array<Object>;
-
+  @Output() qtdSelectedEvent = new EventEmitter<boolean>();
   single: any[];
   multi: any[];
   view: any[] = [125, 110];
   No_of_response: any;
-
+  qtdSelected = true;
 
   // options
   showXAxis = true;
@@ -40,18 +38,24 @@ export class MinibarchartComponent {
 
 
   constructor() {
-    Object.assign(this, {multi})
+    Object.assign(this, {multi});
 
   }
 
   onSelect(event) {
+    // this.qtdSelected = !this.qtdSelected;
+    // this.qtdSelectedEvent.emit(this.qtdSelected);
     console.log(event);
+  }
+
+  ngOnInit() {
+    console.log('in minichart.component, this.graphData', this.graphdata);
   }
 
   ngAfterViewInit() {
     if (this.graphdata) {
       let data: Array<any> = [];
-      data = this.graphdata
+      data = this.graphdata;
       if (data[0].value > 10 || data[1].value > 10) {
         this.yScaleMax = 100;
       }
